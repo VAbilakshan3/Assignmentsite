@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>ShowTrackr</title>
+  <meta name="description" content="">
+  <!-- Mobile viewport optimized -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="..//code chungs/css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+</head>
+
+<body class="bgg">
+
+
+  <nav class="navbar  navbar-static-top ">
+
+
+
+    <a class="navbar-brand  n1" href="index1.html">
+      Show<strong>Trackr</strong>
+    </a>
+
+    <ul class="nav navbar-nav ">
+      <li class=" "><a href="index1.html">Home</a></li>
+      <li class="active borderd"><a href="add1.html">Add</a></li>
+    </ul>
+    <ul class="nav navbar-nav pull-right ">
+      <li class=" btn-default.active"><a href="login1.html">Login</a></li>
+      <li class=" btn-default.active"><a href="signup1.html">Sign up</a></li>
+    </ul>
+  </nav>
+
+
+
+  <div class="container ">
+    <div class="panel ">
+      <div class="panel-heading">
+        ADD TV SHOW
+      </div>
+
+      <form id="form" class="form" name="addForm" method="dialog">
+        <div class="form-group">
+          <label>Name</label>
+          <input class="form-control" type="text" id="Name" name="Name" placeholder="Enter Tv show name">
+        </div>
+        <p style="margin-left:20px " id="print"></p>
+        <button class="btn btn-primary" onclick="Add(Name.value)">
+
+          ADD
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <script>
+    function Add(add) {
+      var letters = /^[A-Za-z]+$/;
+      if (add[0].match(letters)) {
+        document.getElementById('print').style.color = 'green';
+        document.getElementById('print').innerHTML = add + " has been added";
+      }
+      else {
+        document.getElementById('print').style.color = 'red';
+        document.getElementById('print').innerHTML = "Invalid TV Show Name";
+      }
+    }
+
+  </script>
+  <footer class=" section-gap f1">
+    <div class="container ">
+      <div class="row">
+
+        <div class="col-lg-5 col-md-6 col-sm-6">
+          <div class=" single-footer-widt">
+            <h4>Contact Me</h4>
+            <p>Tel : 07XXXXXXXX</p>
+
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+          <div class="single-footer-widg">
+            <h4>Follow Me</h4>
+            <p>Let us be social</p>
+            <div class="footer-social d-flex align-items-center">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-whatsapp"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

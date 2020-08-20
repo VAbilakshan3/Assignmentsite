@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>ShowTrackr</title>
+  <meta charset="UTF-8">
+  <title>ShowTrackr</title>
+  <meta name="description" content="">
+  <!-- Mobile viewport optimized -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../code chungs/css/main.css">
+  <link rel="stylesheet" href="../code chungs/css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="../code chungs/js/sign.js"></script>
+</head>
+
+<body>
+  <div class="bgg">
+    <nav class="navbar  navbar-static-top ">
+      <a class="navbar-brand n1 " href="index1.html">
+        Show<strong>Trackr</strong>
+      </a>
+      <ul class="nav navbar-nav ">
+        <li class=" "><a href="index1.html">Home</a></li>
+        <li class="  "><a href="add1.html">Add</a></li>
+      </ul>
+      <ul class="nav navbar-nav pull-right ">
+        <li class=" "><a href="login1.html">Login</a></li>
+        <li class=" active borderd"><a href="signup1.html">Sign up</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3  "></div>
+        <div class="col-sm-2  "></div>
+        <div class="col-sm-3 jumbotron2">
+          <h2 class="text-center "><strong>Sign up</strong></h2>
+          <form method="POST" name="SignupForm" action=" ">
+            <div class="form-group">
+              <input id=" username" class="form-control" style="font-family: FontAwesome;" type="text" name="username"
+                placeholder="&#xf007 Name" required
+                onclick='document.getElementById("User").innerHTML="Your Name is Required";this.onclick=null;'
+                oninput="validateName(username.value)">
+              <span class="pull-left" style="color:red;font-size: 10px;" id="User"></span>
+            </div>
+            <div class="form-group">
+              <input id=" email" class="form-control form-control" style="font-family: FontAwesome;" type="email"
+                name="email" placeholder="&#64; Email" required
+                onclick='document.getElementById("Email").innerHTML="Your Email address is Required";this.onclick=null;'
+                oninput="validateEmail(email)">
+              <span class="pull-left" style="color:red;font-size: 10px;" id="Email"></span>
+            </div>
+            <div class="form-group">
+              <input id="pass" class="form-control" style="font-family: FontAwesome;" type="password" name="pass"
+                placeholder="&#xf084 Password" required
+                onclick="document.getElementById('Password').innerHTML = 'Your Password is Required';this.onclick=null;"
+                oninput="validatePassword(pass.value)">
+              <span class="pull-left" style="color:red;font-size: 10px; " id="Password"></span>
+            </div>
+            <br>
+            <h5 class="text-center text-muted"><small> clicking on Sign up, you agree to<a href="#"> terms &
+                  conditions</a> and<a href="#"> privacy policy</a></small></h5>
+            <button id="signup" type="submit" class="btn3 btn-block btn-primary">Sign up </button>
+            <h5 class="text-center text-muted">Already have an account? <a href="login1.html">Log in now</a></h5>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class=" section-gap f1">
+    <div class="container ">
+      <div class="row">
+
+        <div class="col-lg-5 col-md-6 col-sm-6">
+          <div class=" single-footer-widt">
+            <h4>Contact Me</h4>
+            <p>Tel : 07XXXXXXXX</p>
+
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+          <div class="single-footer-widg">
+            <h4>Follow Me</h4>
+            <p>Let us be social</p>
+            <div class="footer-social d-flex align-items-center">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-whatsapp"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
